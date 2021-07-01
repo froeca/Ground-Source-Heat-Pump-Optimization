@@ -22,7 +22,8 @@ s.t.    <img src="https://render.githubusercontent.com/render/math?math=Q_{coil}
         
 The analysis was conducted using Excel and MATLAB on a mathematical model built with data collected from the actual coil and a model of the coil built via commerically used software to determine the thermal parameters of the coil. We had to make a couple of assumptions when constructing the model. These were:
   1. The coil parameters needed to create a model in software.
-  2. The starting current of the pump.
+  2. The starting current of the pump.  
+
 A graph of the cost function is shown below.
 
 ![Cost Function](https://github.com/froeca/Ground-Source-Heat-Pump-Optimization/blob/master/Images/costFunction.PNG)
