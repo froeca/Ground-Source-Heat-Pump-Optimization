@@ -10,11 +10,15 @@ The system can be idealized in the diagram seen below. Our system used data from
 
 Our optimization problem is put in standard form as seen below. In the equations below, <img src="https://render.githubusercontent.com/render/math?math=J"> is the cost function per BTU, <img src="https://render.githubusercontent.com/render/math?math=C_{fan}"> and <img src="https://render.githubusercontent.com/render/math?math=C_{pump}"> are cost functions in terms of (W), and <img src="https://render.githubusercontent.com/render/math?math=Q"> is the energy transferred to the air by the coil in units of BTU/hr. Our problem is constrained by the limitations of the fan and pump. A constraint on the BTU output of at least 18,000 BTU/hr will also be specified. This value represents ½ of the typical cooling demands for a normal American household. Thus, formalizing our optimization problem we have
 
-min     <img src="https://render.githubusercontent.com/render/math?math=J(\vec{x}) = \frac{C_{fan}(\vec{x}) + C_{pump}(\vec{x})}{Q_{coil}(\vec{x})}">
-w.r.t.  $`\vec{x} = \{CFM, GPM\}`$
-s.t.    $`Q_{coil} \geq 18000`$
-        $`688.5 \leq CFM \leq 1524`$
-        $`0 < GPM \leq 5`$ 
+min     <img src="https://render.githubusercontent.com/render/math?math=J(\vec{x}) = \frac{C_{fan}(\vec{x}) + C_{pump}(\vec{x})}{Q_{coil}(\vec{x})}">   
+
+w.r.t.  <img src="https://render.githubusercontent.com/render/math?math=\vec{x} = \{CFM, GPM\}">   
+
+s.t.    <img src="https://render.githubusercontent.com/render/math?math=Q_{coil} \geq 18000">   
+
+        <img src="https://render.githubusercontent.com/render/math?math=688.5 \leq CFM \leq 1524">   
+        
+        <img src="https://render.githubusercontent.com/render/math?math=0 < GPM \leq 5">    
         
 The analysis was conducted using Excel and MATLAB on a mathematical model built with data collected from the actual coil and a model of the coil built via commerically used software to determine the thermal parameters of the coil. We had to make a couple of assumptions when constructing the model. These were:
   1. The coil parameters needed to create a model in software.
